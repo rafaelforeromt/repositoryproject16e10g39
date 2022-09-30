@@ -1,4 +1,9 @@
+
+
+git add --all // Used for bringing to git, changes made
+
 git push // update changes made localy to remote git
+git pull // update change made remotely to the local git
 
 git checckout <branch>  // Move to a specific branch
 
@@ -9,3 +14,10 @@ git commit -m"comment" // Comments for editions, mandatory used before pudate (p
 
 git clone <repository link> // Cloning a repository. Necessary when it is related to access to a shared repository
 
+AT MAKING CHANGES
+
+1. git add --all //in order to bring changes made
+2. git commit -m"comment" // in order to add a comment for this changes made (reason or description)
+3. git push //in order to update our changes made on the current branch to the remote git
+
+AT MERGING BRANCHES (also applies for merging partners' branches)
