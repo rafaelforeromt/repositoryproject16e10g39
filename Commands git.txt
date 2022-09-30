@@ -21,3 +21,7 @@ AT MAKING CHANGES
 3. git push //in order to update our changes made on the current branch to the remote git
 
 AT MERGING BRANCHES (also applies for merging partners' branches)
+
+1. git checkout <branch in which will be brough the changes> // destination in order to bring branch changes
+2. git pull // in order to update main branch in case changes were made on it
+3. git merge <branch where the change come from> //In order to bring the changes to the desired branch
