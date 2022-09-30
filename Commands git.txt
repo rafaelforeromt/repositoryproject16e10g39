@@ -1,0 +1,11 @@
+git push // update changes made localy to remote git
+
+git checckout <branch>  // Move to a specific branch
+
+git checckout -b <branch>  // Create and Move to a created branch
+git push -u origin <branch>  // Update new branch at remote git
+
+git commit -m"comment" // Comments for editions, mandatory used before pudate (push) each change
+
+git clone <repository link> // Cloning a repository. Necessary when it is related to access to a shared repository
+
