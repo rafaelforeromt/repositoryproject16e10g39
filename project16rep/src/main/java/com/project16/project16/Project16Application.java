@@ -1,13 +1,13 @@
-package com.usa.repamc.repamc;
+package com.project16.project16;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RepamcApplication {
+public class Project16Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(RepamcApplication.class, args);
+        SpringApplication.run(Project16Application.class, args);
     }
 
 }
