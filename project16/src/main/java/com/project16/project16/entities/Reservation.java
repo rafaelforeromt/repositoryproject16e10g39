@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 
 @Entity
 @Table(name = "message")
@@ -13,8 +14,8 @@ public class Reservation implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idReservartion;
-    private Integer startDate;
-    private Integer devolutionDate;
+    private Date startDate;
+    private Date devolutionDate;
     private String status;
 
     @ManyToOne
@@ -36,19 +37,19 @@ public class Reservation implements Serializable {
         this.idReservartion = idReservartion;
     }
 
-    public Integer getStartDate() {
+    public Date getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(Integer startDate) {
+    public void setStartDate(Date startDate) {
         this.startDate = startDate;
     }
 
-    public Integer getDevolutionDate() {
+    public Date getDevolutionDate() {
         return devolutionDate;
     }
 
-    public void setDevolutionDate(Integer devolutionDate) {
+    public void setDevolutionDate(Date devolutionDate) {
         this.devolutionDate = devolutionDate;
     }
 
