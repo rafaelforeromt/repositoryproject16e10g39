@@ -44,4 +44,12 @@ public class Category implements Serializable {
     public void setPartyrooms(List<Partyroom> partyrooms) {
         this.partyrooms = partyrooms;
     }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }

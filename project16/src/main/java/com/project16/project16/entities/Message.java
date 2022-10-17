@@ -25,6 +25,7 @@ public class Message implements Serializable {
     @JsonIgnoreProperties("messages")
     private Client client;
 
+
     public Integer getIdMessage() {
         return idMessage;
     }
