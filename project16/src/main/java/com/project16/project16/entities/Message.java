@@ -7,14 +7,22 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "message")
+@Table(name = "messages")
 public class Message implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idMessage;
     private String messageText;
+
+    @ManyToOne
+    @JoinColumn(name = "partyroomId")
+    @JsonIgnoreProperties("messages")
     private Partyroom partyroom;
+
+    @ManyToOne
+    @JoinColumn(name = "clientId")
+    @JsonIgnoreProperties("messages")
     private Client client;
 
     public Integer getIdMessage() {

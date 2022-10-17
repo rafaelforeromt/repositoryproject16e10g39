@@ -1,6 +1,8 @@
 package com.project16.project16.entities;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -14,7 +16,15 @@ public class Reservation implements Serializable {
     private Integer startDate;
     private Integer devolutionDate;
     private String status;
+
+    @ManyToOne
+    @JoinColumn(name = "partyroomId")
+    @JsonIgnoreProperties("reservations")
     private Partyroom partyroom;
+
+    @ManyToOne
+    @JoinColumn(name = "clientId")
+    @JsonIgnoreProperties("reservations")
     private Client client;
     private Integer score;
 
