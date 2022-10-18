@@ -24,6 +24,7 @@ public class ReservationService {
 
     public Reservation save(Reservation p){
         if(p.getIdReservartion()==null){
+            p.setStatus("created");
             return reservationRepository.save(p);
         }else{
             Optional<Reservation> e = reservationRepository.getReservation(p.getIdReservartion());

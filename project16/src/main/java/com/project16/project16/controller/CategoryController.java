@@ -18,6 +18,7 @@ public class CategoryController {
     private CategoryService categoryService;
 
     @GetMapping("/all")
+    @ResponseStatus(HttpStatus.CREATED)
     public List<Category> getAll(){
         return categoryService.getAll();
     }
